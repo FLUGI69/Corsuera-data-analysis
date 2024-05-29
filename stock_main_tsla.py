@@ -1,4 +1,5 @@
 # 1. Extracting Tesla stock data using yfinance #5. Tesla stock dashboard 
+
 import yfinance as yf
 import pandas as pd
 import plotly.graph_objs as go
