@@ -1,4 +1,11 @@
 # 1. Extracting Tesla stock data using yfinance #5. Tesla stock dashboard 
+""" 
+    Make sure you install all of the following librarys like
+    yfinance -> vscode: pip install yfinance jupyter: !pip install yfinance
+    pandas: -> vscode: pip install pandas jupyter: !pip install pandas
+    plotly: -> vscode: pip install plotly jupyter: !pip install plotly
+    
+"""
 
 import yfinance as yf
 import pandas as pd
@@ -40,7 +47,7 @@ class Tesla:
                 ))
         
         self.fig.update_layout(
-            title=f"Finance {tesla_stock} Stock",
+            title=f"YFinance {tesla_stock} Stock",
             xaxis_title='Date',
             yaxis_title='Close Price',
             legend_title='Stocks',
