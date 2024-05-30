@@ -1,4 +1,15 @@
 # 3. Extracting GameStop stock data using yfinance #6. GameStop Stock dashboard
+""" 
+    Make sure you install all of the following librarys like
+    yfinance -> vscode: pip install yfinance jupyter: !pip install yfinance
+    pandas: -> vscode: pip install pandas jupyter: !pip install pandas
+    plotly: -> vscode: pip install plotly jupyter: !pip install plotly
+    
+"""
+
+import yfinance as yf
+import pandas as pd
+import plotly.graph_objs as go
 
 class GameStop:
     def __init__(self, df: pd.DataFrame) -> None:
@@ -17,7 +28,7 @@ class GameStop:
 
         return self.df
       
-      def get_fig(self):
+    def get_fig(self):
 
         gamestop_stock = "GME"
 
@@ -33,7 +44,7 @@ class GameStop:
                 ))
         
         self.fig.update_layout(
-            title=f"Finance {gamestop_stock} Stock",
+            title=f"YFinance {gamestop_stock} Stock",
             xaxis_title='Date',
             yaxis_title='Close Price',
             legend_title='Stocks',
