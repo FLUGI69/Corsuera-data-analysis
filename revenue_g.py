@@ -43,6 +43,7 @@ else:
 
 df["Revenue"] = df["Revenue"].replace({'\$': '', ' B': ''}, regex=True).astype(float)
 df["Year"] = df["Year"].str.replace(' (TTM)', '').astype(int)
+print("GameStop Revenue tail -->\n",df.tail())
 
 fig = go.Figure([go.Scatter(
     x=df["Year"], 
