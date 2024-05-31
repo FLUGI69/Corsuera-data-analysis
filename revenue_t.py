@@ -43,7 +43,7 @@ tesla_revenue = "TSLA Revenue"
 
 df["Revenue"] = df["Revenue"].replace({'\$': ''}, regex=True)
 df["Revenue"] = df["Revenue"].str.replace(',', '').astype(float)
-print(df.tail())
+print("Tesla Revenue tail -->\n",df.tail())
 
 fig = go.Figure()
 
